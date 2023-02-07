@@ -4,10 +4,16 @@ import {MainComponent} from "../components/MainComponent";
 ---
 
 <Layout>
-	<main class="flex h-screen ">
-		<div class="max-w-4xl m-auto flex-grow flex flex-col gap-10 p-4">
-			<h1 class="text-5xl lg:text-6xl xl:text-7xl font-bold">Que serait Vitré si la ville était en bord de mer ?</h1>
-			<MainComponent client:visible></MainComponent>
+	<main class="flex flex-col h-screen">
+		<nav class="bg-black text-slate-100 flex p-4 items-center gap-10">
+			<img class="h-12" src="/bretagne.svg" alt="BZH"/>
+			<div class="font-bold text-xl">Fièrement Breton</div>
+		</nav>
+		<div class="h-full flex">
+			<div class="max-w-4xl m-auto flex-grow flex flex-col gap-10 p-4">
+				<h1 class="text-5xl lg:text-6xl xl:text-7xl font-bold">Que serait Vitré si la ville était en bord de mer ?</h1>
+				<MainComponent client:visible></MainComponent>
+			</div>
 		</div>
 
 	</main>
