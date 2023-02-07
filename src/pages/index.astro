@@ -1,0 +1,11 @@
+---
+import Layout from '../layouts/Layout.astro';
+import {MainComponent} from "../components/MainComponent";
+---
+
+<Layout>
+	<main class="flex h-screen flex-col items-center justify-center gap-10">
+		<h1 class="text-7xl font-bold">Que serait Vitré si la ville était en bord de mer ?</h1>
+		<MainComponent client:visible></MainComponent>
+	</main>
+</Layout>
